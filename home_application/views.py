@@ -33,11 +33,11 @@ def contactus(request):
     """
     return render_mako_context(request, '/home_application/contact.html')
 
-def snc_cmdb(request):
-    """
-    获取CMDB数据
-    """
-    client = get_client_by_request(request)    
-    kwargs = {'bk_biz_id': 1}
-    result = client.cc.get_app_host_list(kwargs)
-    return render_json(result)
+#def snc_cmdb(request):
+#    """
+#    获取CMDB数据
+#    """
+#    client = get_client_by_request(request)    
+#    kwargs = {'bk_biz_id': 1}
+#    result = client.cc.get_app_host_list(kwargs)
+#    return render_json(result)

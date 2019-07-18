@@ -9,7 +9,8 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License.
 """
 
-from common.mymako import render_mako_context
+from blueking.component.shortcuts import get_client_by_request
+from common.mymako import render_mako_context, render_json
 
 
 def home(request):
@@ -31,3 +32,12 @@ def contactus(request):
     联系我们
     """
     return render_mako_context(request, '/home_application/contact.html')
+
+def snc_cmdb(request):
+    """
+    获取CMDB数据
+    """
+    client = get_client_by_request(request)    
+    kwargs = {'bk_biz_id': 1}
+    result = client.cc.get_app_host_list(kwargs)
+    return render_json(result)

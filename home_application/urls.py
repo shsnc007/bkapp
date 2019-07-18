@@ -16,5 +16,6 @@ urlpatterns = patterns(
     (r'^$', 'home'),
     (r'^dev-guide/$', 'dev_guide'),
     (r'^contactus/$', 'contactus'),
-    (r'^snc-cmdb/$', 'snc_cmdb'),
+    #自定义应用
+    (r'^snc-cmdb/$', include('wuzhiweitest01.urls')),
 )

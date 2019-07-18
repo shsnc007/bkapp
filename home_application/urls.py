@@ -16,5 +16,5 @@ urlpatterns = patterns(
     (r'^$', 'home'),
     (r'^dev-guide/$', 'dev_guide'),
     (r'^contactus/$', 'contactus'),
-    #(r'^snc-cmdb/$', 'snc_cmdb'),
+    (r'^snc-cmdb/$', 'snc_cmdb'),
 )

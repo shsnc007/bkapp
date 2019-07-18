@@ -19,5 +19,5 @@ AVAILABLE_COLLECTIONS = {
     'gse': CollectionsGSE,
     'job': CollectionsJOB,
     'sops': CollectionsSOPS,
-    'wuzhiweitest01': CollectionsCMDB,
+    'wuzhiweitest01': CollectionsWUZHIWEITEST01,
 }

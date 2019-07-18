@@ -13,7 +13,7 @@ from django.conf.urls import patterns
 
 urlpatterns = patterns(
     'home_application.views',
-    (r'^$', 'test'),
+    (r'^$', 'home'),
     (r'^dev-guide/$', 'dev_guide'),
     (r'^contactus/$', 'contactus'),
     (r'^snc-cmdb/$', 'snc_cmdb'),

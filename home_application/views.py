@@ -31,9 +31,3 @@ def contactus(request):
     联系我们
     """
     return render_mako_context(request, '/home_application/contact.html')
-
-def snc_cmdb(request):
-    """
-    开发指引
-    """
-    return render_mako_context(request, '/home_application/snc_cmdb.html')

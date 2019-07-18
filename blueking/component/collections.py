@@ -7,7 +7,7 @@ from .apis.cmsi import CollectionsCMSI
 from .apis.gse import CollectionsGSE
 from .apis.job import CollectionsJOB
 from .apis.sops import CollectionsSOPS
-from .apis.wuzhiweitest01 import CollectionsCMDB
+from .apis.wuzhiweitest01 import CollectionsAGENT
 
 
 # Available components

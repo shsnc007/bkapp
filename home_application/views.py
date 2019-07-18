@@ -11,6 +11,7 @@ See the License for the specific language governing permissions and limitations 
 
 from blueking.component.shortcuts import get_client_by_request
 from common.mymako import render_mako_context, render_json
+import json
 
 
 def home(request):
@@ -40,4 +41,4 @@ def snc_cmdb(request):
     client = get_client_by_request(request)    
     kwargs = {'bk_biz_id': 1}
     result = client.cc.get_app_host_list(kwargs)
-    return render_json(result)
+    return render_json(json.dump(result))

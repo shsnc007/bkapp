@@ -5,5 +5,5 @@ def home(request):
     """
     首页
     """
-    return render(request, 'wuzhiweitest01/home.html')
+    return render(request, '/wuzhiweitest01/home.html')
 

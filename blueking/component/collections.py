@@ -7,7 +7,7 @@ from .apis.cmsi import CollectionsCMSI
 from .apis.gse import CollectionsGSE
 from .apis.job import CollectionsJOB
 from .apis.sops import CollectionsSOPS
-#from .apis.wuzhiweitest01 import CollectionsAGENT
+from .apis.wuzhiweitest01 import CollectionsWUZHIWEITEST01
 
 
 # Available components
@@ -19,5 +19,5 @@ AVAILABLE_COLLECTIONS = {
     'gse': CollectionsGSE,
     'job': CollectionsJOB,
     'sops': CollectionsSOPS,
-    #'wuzhiweitest01': CollectionsWUZHIWEITEST01,
+    'wuzhiweitest01': CollectionsWUZHIWEITEST01,
 }

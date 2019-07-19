@@ -41,4 +41,4 @@ def snc_cmdb(request):
     client = get_client_by_request(request)    
     kwargs = {'bk_biz_id': 1}
     result = client.cc.get_app_host_list(kwargs)
-    return render_json(result)
+    return render_json(json.loads(result))
